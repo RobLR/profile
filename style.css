@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 0em;
+    scroll-padding-top: 7.5em;
+}
+
+body{
+    background-color: rgb(200, 233, 231);
+}
+
+p{
+    margin: 0.5em;
+}
+
+h2{
+    margin: 0.5em;
+}
+
+h3{
+    margin: 0.5em;
+}
+
+.language_icon{
+    width:100px;
+    height:100px;
+}
+
+.contact_icons{
+    width:15px;
+    height:15px;
+}
+
+#mainbar{
+    background-color: teal;
+    position: fixed;
+    padding-right: 100%;
+    padding-left: 1em;
+    padding-top: 1em;
+    z-index: 100;
+}
+
+#nav{
+    position: relative;
+    right: 1em;
+    display: flex;
+    padding-top: 1em;
+}
+
+.navbutton{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+.navbutton:hover{
+    background-color: honeydew;
+}
+
+#text{
+    position: absolute;
+    top: 7.5em;
+}
+
+#content{
+    left: 1em;
+    height: 2000px;
+}
+
+#contact{
+    position: static;
+    background-color:rgb(73, 73, 73);
+    padding-right: 100%;
+    padding-left:2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+

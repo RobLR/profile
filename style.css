@@ -60,11 +60,11 @@ h3{
 
 #text{
     position: absolute;
-    top: 7.5em;
+    top: 6.9em;
 }
 
 #content{
-    left: 1em;
+    margin: 0.75em;
     height: 2000px;
 }
 
@@ -77,4 +77,11 @@ h3{
     padding-bottom: 1em;
 }
 
+.languages{
+    display: flex;
+    margin-bottom: 1em;
+}
 
+.contact_details{
+    display: flex;
+}

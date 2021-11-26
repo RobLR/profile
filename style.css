@@ -44,6 +44,7 @@ h3{
     position: relative;
     right: 1em;
     display: flex;
+    flex-wrap: wrap;
     padding-top: 1em;
 }
 
@@ -60,7 +61,7 @@ h3{
 
 #text{
     position: absolute;
-    top: 6.9em;
+    top: 8em;
 }
 
 #content{

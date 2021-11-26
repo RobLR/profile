@@ -2,33 +2,12 @@
     box-sizing: border-box;
     margin: 0em;
     padding: 0em;
-    scroll-padding-top: 7.5em;
+    scroll-padding-top: 8.5em;
 }
 
 body{
     background-color: rgb(200, 233, 231);
-}
-
-p{
-    margin: 0.5em;
-}
-
-h2{
-    margin: 0.5em;
-}
-
-h3{
-    margin: 0.5em;
-}
-
-.language_icon{
-    width:100px;
-    height:100px;
-}
-
-.contact_icons{
-    width:15px;
-    height:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #mainbar{
@@ -38,13 +17,13 @@ h3{
     padding-left: 1em;
     padding-top: 1em;
     z-index: 100;
+    top: 0;
 }
 
 #nav{
     position: relative;
     right: 1em;
     display: flex;
-    /* flex-wrap: wrap; */
     padding-top: 1em;
 }
 
@@ -59,36 +38,39 @@ h3{
     background-color: honeydew;
 }
 
-#text{
-    position: absolute;
+#main{
+    position: relative;
     top: 8em;
-}
-
-#content{
-    margin: 0.75em;
-    height: 2000px;
-}
-
-#contact{
-    position: static;
-    background-color:rgb(73, 73, 73);
-    /* padding-right: 100%; */
-    /* padding-left: 1em; */
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-
+    margin: 1em;
 }
 
 .languages{
     display: flex;
-    margin-bottom: 1em;
+}
+
+.language_icon{
+    width:100px;
+    height:100px;
+}
+
+#contact{
+    position: relative;
+    top: 8em;
+    background-color:rgb(73, 73, 73);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#contact_heading{
+    text-align: center;
 }
 
 .contact_details{
     display: flex;
 }
 
-#contact_heading{
-    text-align: center;
+.contact_icons{
+    width:15px;
+    height:15px;
 }

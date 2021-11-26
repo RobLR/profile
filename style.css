@@ -71,10 +71,12 @@ h3{
 #contact{
     position: static;
     background-color:rgb(73, 73, 73);
-    padding-right: 100%;
-    padding-left:2em;
+    /* padding-right: 100%; */
+    /* padding-left: 1em; */
     padding-top: 1em;
     padding-bottom: 1em;
+    text-align: center;
+
 }
 
 .languages{
@@ -84,4 +86,8 @@ h3{
 
 .contact_details{
     display: flex;
+}
+
+#contact_heading{
+    text-align: center;
 }

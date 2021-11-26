@@ -12,12 +12,11 @@ body{
 
 #mainbar{
     background-color: teal;
-    position: fixed;
-    padding-right: 100%;
+    position: sticky;
+    top: 0;
     padding-left: 1em;
     padding-top: 1em;
     z-index: 100;
-    top: 0;
 }
 
 #nav{
@@ -39,8 +38,6 @@ body{
 }
 
 #main{
-    position: relative;
-    top: 8em;
     margin: 1em;
 }
 
@@ -54,8 +51,6 @@ body{
 }
 
 #contact{
-    position: relative;
-    top: 8em;
     background-color:rgb(73, 73, 73);
     padding-top: 1em;
     padding-bottom: 1em;

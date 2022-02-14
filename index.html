@@ -9,122 +9,104 @@
 </head>
 
 <body>
-    <header id="mainbar">
-        <h1>Robert Le Roux</h1>
-        <nav id="nav">
-            <a href="#about" class="navbutton">About</a>
-            <a href="#skillset" class="navbutton">Skillset</a>
-            <a href="#experience" class="navbutton">Experience</a>
-            <a href="#portfolio" class="navbutton">Portfolio</a>
-            <a href="#contact" class="navbutton">Contact</a>
-        </nav>
+    <header id="landing">
+        <!-- <img id="profilePic" src="https://thispersondoesnotexist.com/image"> -->
+        <div>
+            <h1>Robert Le Roux</h1>
+            <h2>Aspiring software engineer</h2>
+        </div>
     </header>
 
+    <nav id="nav">
+        <a href="#about" class="navbutton">About</a>
+        <a href="#skillset" class="navbutton">Skillset</a>
+        <a href="#experience" class="navbutton">Experience</a>
+        <a href="#portfolio" class="navbutton">Portfolio</a>
+        <a href="#contact" class="navbutton">Contact</a>
+    </nav>
+
     <main id="main">
-        <div id="about">
+        <section id="about">
             <h2>About</h2>
             <p>My name is Robert Le Roux and I'm currently based in Leeds. I'm currently attending a Tech Talent Accelerator pre apprenticeship with the aim of getting an apprenticeship or junior developer role.</p>
             
             <p>As a tech enthusiast I was drawn to computer science at GCSE level where I first experienced coding in Python and some basic HTML. After my A levels I started a Geology degree during which I chose modules involving statistical analysis with R and a module using GIS, which I used in further university projects.</p>
 
             <p>I realised I wasn't enjoying Geology that much and decided to stop my course and started looking for ways into software engineering.</p>
-        </div>
+        </section>
 
         <hr>
 
-        <div id="skillset">
+        <section id="skillset">
             <h2>Skillset</h2>
-            <div class="languages">
-                <img class="language_icon" src="images/python-original.svg"  alt="python logo">
-                <div>
-                    <h3>Python</h3>
-                    <p>I studied Python at GCSE level where I gained a fairly good understanding of it.</p>
-                </div>
+            <div id="cardHolder">
+                <img class="languageIcon" src="images/html5-plain.svg"  alt="html5 logo">
+                <img class="languageIcon" src="images/css3-plain.svg" alt="css3 logo">
+                <img class="languageIcon" src="images/javascript-original.svg" alt="js logo">
+                <img class="languageIcon" src="images/typescript-original.svg" alt="ts logo">
             </div>
-            <div class="languages">
-                <img class="language_icon" src="images/html5-plain.svg"  alt="html5 logo">
-                <div>
-                    <h3>HTML 5</h3>
-                    <p>I have a fairly rudimentary knowledge of HTML 5 from my time on the Tech Talent Accelerator course and from my GCSE computer science.</p>
-                </div>
-            </div>
-            <div class="languages">    
-                <img class="language_icon" src="images/css3-plain.svg" alt="css3 logo">
-                <div>
-                    <h3>CSS 3</h3>
-                    <p>I have gained a basic understanding of CSS 3.</p>
-                </div>
-            </div>
-            <div class="languages">
-                <img class="language_icon" src="images/javascript-original.svg" alt="js logo">
-                <div>
-                    <h3>JavaScript</h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="languages">
-                <img class="language_icon" src="images/typescript-original.svg" alt="ts logo">
-                <div>
-                    <h3>TypeScript</h3>
-                    <p></p>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <hr>
 
-        <div id="experience">
+        <section id="experience">
             <h2>Experience</h2>
             
             <h3>Tech Talent Accelerator (22/11/2021 - 14/01/2022)</h3>
-            <p>I am currently attending a 6 week Tech Talent Accelerator pre apprenticehip course provided by Generation and focuses on HTML, CSS and JavaScript.</p>
-        </div>
+            <p>This was a 6-week bootcamp aimed at teaching people the basics to get into careers in software development. The first two weeks began with teaching some computing fundamentals, an introduction to Agile and GIT, followed by HTML and CSS. For the following four weeks I focused on JavaScript, and then TypeScript to create various projects using local storage, the fetch API, DOM manipulation, classes and object-oriented programming. This culminated in a week long group project where we used GIT and Live Share to work together to make a text based adventure game and adventure game creator.</p>
+        </section>
 
         <hr>
 
-        <div id="portfolio">
+        <section id="portfolio">
             <h2>Portfolio</h2>
-            <div id="projects">
-                
-                <a href="https://roblr.github.io/CSS-Positioning-Exercise/" class="projectLink" target="_blank">
-                    <div class="container">
-                      <img src="images/Screenshot 2021-12-10 153026.png" class="projectImage">
-                      <div class="overlay">
-                        <div class="projectDescription">
-                            <h4>CSS Precision</h4>
-                            <p>This small project allowed me to practice positioning HTML precisely using CSS and helped me learn how the display and position properties work. It also allowed me to experiment with flexbox and gain an understanding of it.</p>
-                        </div>
-                      </div>
+            
+            <section id="featuredProjects">
+                <article class="bigProject">    
+                    <a href="https://roblr.github.io/CSS-Positioning-Exercise/" class="bigProjectLink" target="_blank">
+                        <img src="images/csspositioning.png" class="bigProjectImage">
+                    </a>
+                    <div class="bigProjectDescription">
+                        <a href="https://roblr.github.io/CSS-Positioning-Exercise/"><h4>CSS Precision</h4></a>
+                        <p>This small project allowed me to practice positioning HTML precisely using CSS and helped me learn how the display and position properties work. It also allowed me to experiment with flexbox and gain an understanding of it.</p>
                     </div>
-                </a>
+                    <a href="https://github.com/RobLR/CSS-Positioning-Exercise">
+                        <img class="projectGithubRight" src="images/github-original.svg">
+                    </a>
+                </article>
 
-                <a href="https://roblr.github.io/unicorns/" class="projectLink" target="_blank">
-                    <div class="container">
-                      <img src="images/Screenshot 2021-12-10 153026.png" class="projectImage">
-                      <div class="overlay">
-                        <div class="projectDescription">
-                            <h4>Horse Racing Game</h4>
-                            <p>This project was used as an introduction to JavaScript, mainly how to use variables, for and if statements, functions and creating HTML elements with JavaScript code.</p>
-                        </div>
-                      </div>
+                <article class="bigProject reverse">
+                    <a href="https://roblr.github.io/unicorns/" class="bigProjectLink" target="_blank">
+                        <img src="images/unicorns.png" class="bigProjectImage">
+                    </a>
+                    <div class="bigProjectDescription">
+                        <a href="https://roblr.github.io/unicorns/"><h4>Horse Racing Game</h4></a>
+                        <p>This project was used as an introduction to JavaScript, mainly how to use variables, for and if statements, functions and creating HTML elements with JavaScript code.</p>
                     </div>
-                </a>
-                
-                <a href="https://roblr.github.io/carshowcase/" class="projectLink" target="_blank">
-                    <div class="container">
-                      <img src="images/Screenshot 2021-12-10 153026.png" class="projectImage">
-                      <div class="overlay">
-                        <div class="projectDescription">
-                            <h4>Car Showroom</h4>
-                            <p>A project with the intention of starting to learn TypeScript. The aim was to creat a basic project in JavaScript and convert it to TypeScript. I was then asked to improve it by using local storage and forms to save user input and generate HTML elements.</p>
-                        </div>
-                      </div>
-                    </div>
-                </a>
+                    <a href="https://github.com/RobLR/CSS-Positioning-Exercise">
+                        <img class="projectGithubLeft" src="images/github-original.svg">
+                    </a>
+                </article>
 
+                <article class="bigProject">                
+                    <a href="https://roblr.github.io/carshowcase/" class="bigProjectLink" target="_blank">
+                        <img src="images/carshowcase.png" class="bigProjectImage">
+                    </a>
+                    <div class="bigProjectDescription">
+                        <a href="https://roblr.github.io/carshowcase/"><h4>Car Showroom</h4></a>
+                        <p>A project with the intention of starting to learn TypeScript. The aim was to creat a basic project in JavaScript and convert it to TypeScript. I was then asked to improve it by using local storage and forms to save user input and generate HTML elements.</p>
+                    </div>
+                    <a href="https://github.com/RobLR/CSS-Positioning-Exercise">
+                        <img class="projectGithubRight" src="images/github-original.svg">
+                    </a>
+                </article>
+            </section>
+            
+            <h3>Other Projects</h3>
+            <section id="smallProjects">
                 <a href="https://roblr.github.io/bouncingball/" class="projectLink" target="_blank">
                     <div class="container">
-                      <img src="images/Screenshot 2021-12-10 153026.png" class="projectImage">
+                      <img src="images/bouncingballs.png" class="projectImage">
                       <div class="overlay">
                         <div class="projectDescription">
                             <h4>Bouncing Balls</h4>
@@ -134,8 +116,44 @@
                     </div>
                 </a>
 
-            </div>
-        </div>
+                <a href="https://roblr.github.io/treasurehunt/" class="projectLink" target="_blank">
+                    <div class="container">
+                      <img src="images/bouncingballs.png" class="projectImage">
+                      <div class="overlay">
+                        <div class="projectDescription">
+                            <h4>Treasure Hunt</h4>
+                            <p>A small game to practice getting click locations and starting a project from scratch with only a brief.</p>
+                        </div>
+                      </div>
+                    </div>
+                </a>
+
+                <a href="https://roblr.github.io/treasurehunt/" class="projectLink" target="_blank">
+                    <div class="container">
+                      <img src="images/bouncingballs.png" class="projectImage">
+                      <div class="overlay">
+                        <div class="projectDescription">
+                            <h4>Treasure Hunt</h4>
+                            <p>A small game to practice getting click locations and starting a project from scratch with only a brief.</p>
+                        </div>
+                      </div>
+                    </div>
+                </a>
+
+                <a href="https://roblr.github.io/treasurehunt/" class="projectLink" target="_blank">
+                    <div class="container">
+                      <img src="images/bouncingballs.png" class="projectImage">
+                      <div class="overlay">
+                        <div class="projectDescription">
+                            <h4>Treasure Hunt</h4>
+                            <p>A small game to practice getting click locations and starting a project from scratch with only a brief.</p>
+                        </div>
+                      </div>
+                    </div>
+                </a>
+            </section>
+
+        </section>
     </main>
 
     <footer>

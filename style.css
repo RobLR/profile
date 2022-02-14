@@ -3,28 +3,51 @@
     margin: 0em;
     padding: 0em;
     scroll-padding-top: 8.5em;
+    scroll-behavior: smooth;
 }
 
 body{
-    background-color: rgb(200, 233, 231);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(1, 8, 3);
 }
 
-#mainbar{
-    background-color: teal;
+hr {
+    background-color: rgb(114, 186, 95);
+    height: 3px;
+    border-width: 0;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/* Landing screen elements */
+#landing{
+    background-color: rgb(99, 105, 101);
+    width: 100%;
+    height: 100vh;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#profilePic {
+    width: 20%;
+    height: auto;
+    margin-right: 3%;
+}
+
+/* Navigation bar elements */
+#nav{
+    background-color: rgb(114, 186, 95);
     position: sticky;
     top: 0;
-    padding-left: 1em;
-    padding-top: 1em;
-    z-index: 100;
-}
-
-#nav{
-    position: relative;
-    right: 1em;
     display: flex;
-    padding-top: 1em;
     flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 100;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .navbutton{
@@ -35,44 +58,139 @@ body{
 }
 
 .navbutton:hover{
-    background-color: honeydew;
+    background-color: rgb(142, 200, 126);
 }
 
+
+
+
+/* The main body of the website */
 #main{
     margin: 1em;
+    padding-left: 15%;
+    padding-right: 15%;
+
 }
 
-.languages{
+/* About section */
+#about {
+    padding-bottom: 4em;
+}
+
+#about ~ section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+/* Skills section */
+#cardHolder{
     display: flex;
+    padding: 3rem;
+    justify-content: space-evenly;
+    
 }
 
-.language_icon{
+.skillCard:hover{
+    filter: grayscale(0);
+    transition: .5s ease;
+}
+
+.languageIcon{
     width:100px;
     height:100px;
+    filter: grayscale(1);
 }
 
-#projects{
+.languageIcon:hover{
+    filter: grayscale(0);
+    transition: .5s ease;
+}
+
+
+/* Projects section */
+
+.bigProject {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: nowrap;
+    border: 2px solid black;
+    margin: 1em;
+    /* height: 30em; */
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.bigProjectLink {
+    width: 100%;
+}
+
+.bigProjectImage {
+    width: 100%;
+}
+
+.bigProjectDescription {
+
+    color: rgb(1, 8, 3);
+}
+
+.projectGithubRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    z-index: 50;
+}
+
+.projectGithubLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    z-index: 50;
+}
+
+
+
+
+
+
+
+#smallProjects{
+    display: flex;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
 }
 
 .projectLink{
-    width: 30vw;
+    width: 20em;
+    height: 20em;
 }
 
 .container {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .projectImage {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .overlay {
     position: absolute;
     bottom: 0;
-    background-color: #1c272bea;
+    background-color: rgba(99, 105, 101, 0.829);
     overflow: hidden;
     width: 100%;
     height: 0; 
@@ -88,8 +206,10 @@ body{
     margin:1vw;
 }
 
+
+/* Contact info and footer */
 #contact{
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(99, 105, 101);
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;

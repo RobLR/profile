@@ -129,6 +129,7 @@ hr {
 
 .bigProjectLink {
     width: 100%;
+    min-width: 40%;
 }
 
 .bigProjectImage {

@@ -83,14 +83,74 @@ hr {
 }
 
 /* Skills section */
-#cardHolder{
+#skills{
     display: flex;
-    padding: 3rem;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
+    align-content: center;
 }
 
-.skillCard:hover{
+#carousel{
+    height: 150px;
+    position: relative;
+}
+
+.skill{
+    position: absolute;
+    transition: width 1s, height 1s, left 1s, filter 1s, top 1s, opacity 1s;
+}
+
+.middleSkill{
+    width:150px;
+    height:150px;
+    left: -75px;
+    top: 0;
+}
+
+.leftSkill{
+    width:100px;
+    height:100px;
+    filter: grayscale(1);
+    left: -250px;
+    z-index: -1;
+    top: 25px;
+}
+
+.rightSkill{
+    width:100px;
+    height:100px;
+    filter: grayscale(1);
+    left: 150px;
+    z-index: -1;
+    top: 25px;
+}
+
+.enterLeft{
+    opacity: 0;
+    left: -425px;
+    width:100px;
+    height:100px;
+    filter: grayscale(1);
+    top: 25px;
+    z-index: -1;
+}
+
+.enterRight{
+    opacity: 0;
+    left: 325px;
+    width:100px;
+    height:100px;
+    filter: grayscale(1);
+    top: 25px;    
+    z-index: -1;
+}
+
+.hiddenSkill{
+    display: none;
+    z-index: -1;
+    left: 0;
+}
+
+/* .skillCard:hover{
     filter: grayscale(0);
     transition: .5s ease;
 }
@@ -104,7 +164,7 @@ hr {
 .languageIcon:hover{
     filter: grayscale(0);
     transition: .5s ease;
-}
+} */
 
 
 /* Projects section */

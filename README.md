@@ -1,2 +1,2 @@
 # profile
-MY personal profile and portfolio
+My personal profile and portfolio

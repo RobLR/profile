@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Le Roux</title>
     <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer></script>
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -28,7 +31,7 @@
     <main id="main">
         <section id="about">
             <h2>About</h2>
-            <p>My name is Robert Le Roux and I'm currently based in Leeds. I'm currently attending a Tech Talent Accelerator pre apprenticeship with the aim of getting an apprenticeship or junior developer role.</p>
+            <p>My name is Robert Le Roux and I'm currently based in Leeds. I have recently completed a Tech Talent Accelerator pre apprenticeship with the aim of getting an apprenticeship or junior developer role.</p>
             
             <p>As a tech enthusiast I was drawn to computer science at GCSE level where I first experienced coding in Python and some basic HTML. After my A levels I started a Geology degree during which I chose modules involving statistical analysis with R and a module using GIS, which I used in further university projects.</p>
 
@@ -36,14 +39,14 @@
         </section>
 
         <hr>
-
+<!-- Auto rotating carousel of logos for various technologies I know, 5 cards on display, getting smaller to the sides, only centre card is colour, others are grayscale -->
         <section id="skillset">
             <h2>Skillset</h2>
-            <div id="cardHolder">
-                <img class="languageIcon" src="images/html5-plain.svg"  alt="html5 logo">
-                <img class="languageIcon" src="images/css3-plain.svg" alt="css3 logo">
-                <img class="languageIcon" src="images/javascript-original.svg" alt="js logo">
-                <img class="languageIcon" src="images/typescript-original.svg" alt="ts logo">
+            <div id="skills">
+                <img id="leftArrow" src="images/arrow_left.svg" alt="previous skill">
+                <div id="carousel">
+                </div>
+                <img id="rightArrow" src="images/arrow_right.svg" alt="next skill">
             </div>
         </section>
 
@@ -60,7 +63,7 @@
 
         <section id="portfolio">
             <h2>Portfolio</h2>
-            
+            <!-- Major projects: 3 that I want to showcase, exoand/grow on hover, colour changes? -->
             <section id="featuredProjects">
                 <article class="bigProject">    
                     <a href="https://roblr.github.io/TextAdventureGameAndCreator/" class="bigProjectLink" target="_blank">
@@ -101,7 +104,7 @@
                     </a>
                 </article>
             </section>
-            
+            <!-- Smaller projects: Formatted in a grid, whith short descriptions on hover -->
             <h3>Other Projects</h3>
             <section id="smallProjects">
                 <a href="https://roblr.github.io/bouncingball/" class="projectLink" target="_blank">
@@ -166,6 +169,6 @@
             </div>      
         </div>
     </footer>
-   
+
 </body>
 </html>

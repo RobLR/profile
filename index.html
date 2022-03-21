@@ -13,7 +13,7 @@
 
 <body>
     <header id="landing">
-        <!-- <img id="profilePic" src="https://thispersondoesnotexist.com/image"> -->
+        <!-- <img id="profilePic" src="#"> -->
         <div>
             <h1>Robert Le Roux</h1>
             <h2>Aspiring software engineer</h2>
@@ -32,21 +32,19 @@
         <section id="about">
             <h2>About</h2>
             <p>My name is Robert Le Roux and I'm currently based in Leeds. I have recently completed a Tech Talent Accelerator pre apprenticeship with the aim of getting an apprenticeship or junior developer role.</p>
-            
             <p>As a tech enthusiast I was drawn to computer science at GCSE level where I first experienced coding in Python and some basic HTML. After my A levels I started a Geology degree during which I chose modules involving statistical analysis with R and a module using GIS, which I used in further university projects.</p>
-
             <p>I realised I wasn't enjoying Geology that much and decided to stop my course and started looking for ways into software engineering.</p>
         </section>
 
         <hr>
-<!-- Auto rotating carousel of logos for various technologies I know, 5 cards on display, getting smaller to the sides, only centre card is colour, others are grayscale -->
+<!-- Carousel of logos for various technologies I know, 5 cards on display, getting smaller to the sides, only centre card is colour, others are grayscale -->
         <section id="skillset">
             <h2>Skillset</h2>
             <div id="skills">
-                <img id="leftArrow" src="images/arrow_left.svg" alt="previous skill">
+                <img id="leftArrow" class="arrow" src="graphics/icons/arrow_left.svg" alt="previous skill">
                 <div id="carousel">
                 </div>
-                <img id="rightArrow" src="images/arrow_right.svg" alt="next skill">
+                <img id="rightArrow" class="arrow" src="graphics/icons/arrow_right.svg" alt="next skill">
             </div>
         </section>
 
@@ -54,7 +52,6 @@
 
         <section id="experience">
             <h2>Experience</h2>
-            
             <h3>Tech Talent Accelerator (22/11/2021 - 14/01/2022)</h3>
             <p>This was a 6-week bootcamp aimed at teaching people the basics to get into careers in software development. The first two weeks began with teaching some computing fundamentals, an introduction to Agile and GIT, followed by HTML and CSS. For the following four weeks I focused on JavaScript, and then TypeScript to create various projects using local storage, the fetch API, DOM manipulation, classes and object-oriented programming. This culminated in a week long group project where we used GIT and Live Share to work together to make a text based adventure game and adventure game creator.</p>
         </section>
@@ -63,44 +60,44 @@
 
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <!-- Major projects: 3 that I want to showcase, exoand/grow on hover, colour changes? -->
+            <!-- Major projects: 3 that I want to showcase, expand/grow on hover, colour changes? -->
             <section id="featuredProjects">
                 <article class="bigProject">    
                     <a href="https://roblr.github.io/TextAdventureGameAndCreator/" class="bigProjectLink" target="_blank">
-                        <img src="images/textadventure.png" class="bigProjectImage">
+                        <img src="graphics/images/textadventure.png" class="bigProjectImage">
                     </a>
                     <div class="bigProjectDescription">
                         <a href="https://roblr.github.io/TextAdventureGameAndCreator/"><h4>Text Based Adventure and Creator</h4></a>
                         <p>This was the final group project from my Generation UK bootcamp. It was completed over a week and intended to be a way to play and create text based adventure games. It involved combining all of the things we'd learnt on the course. I was mainly responsible for the JavaScript side of things, however I did help with some HTML and CSS as well. The biggest challenges we faced were being able to link locations back to each other and storing things within other things while still making them available to be referenced. We achieved this using object oriented programming and classes.</p>
                     </div>
                     <a href="https://github.com/RobLR/TextAdventureGameAndCreator">
-                        <img class="projectGithubRight" src="images/github-original.svg">
+                        <img class="projectGithubRight" src="graphics/icons/github.svg">
                     </a>
                 </article>
 
                 <article class="bigProject reverse">
                     <a href="https://roblr.github.io/unicorns/" class="bigProjectLink" target="_blank">
-                        <img src="images/unicorns.png" class="bigProjectImage">
+                        <img src="graphics/images/unicorns.png" class="bigProjectImage">
                     </a>
                     <div class="bigProjectDescription">
                         <a href="https://roblr.github.io/unicorns/"><h4>Horse Racing Game</h4></a>
                         <p>This project was used as an introduction to JavaScript, mainly how to use variables, for and if statements, functions and creating HTML elements with JavaScript code.</p>
                     </div>
                     <a href="https://github.com/RobLR/CSS-Positioning-Exercise">
-                        <img class="projectGithubLeft" src="images/github-original.svg">
+                        <img class="projectGithubLeft" src="graphics/icons/github.svg">
                     </a>
                 </article>
 
                 <article class="bigProject">                
                     <a href="https://roblr.github.io/carshowcase/" class="bigProjectLink" target="_blank">
-                        <img src="images/carshowcase.png" class="bigProjectImage">
+                        <img src="graphics/images/carshowcase.png" class="bigProjectImage">
                     </a>
                     <div class="bigProjectDescription">
                         <a href="https://roblr.github.io/carshowcase/"><h4>Car Showroom</h4></a>
                         <p>A project with the intention of starting to learn TypeScript. The aim was to creat a basic project in JavaScript and convert it to TypeScript. I was then asked to improve it by using local storage and forms to save user input and generate HTML elements.</p>
                     </div>
                     <a href="https://github.com/RobLR/CSS-Positioning-Exercise">
-                        <img class="projectGithubRight" src="images/github-original.svg">
+                        <img class="projectGithubRight" src="graphics/icons/github.svg">
                     </a>
                 </article>
             </section>
@@ -109,7 +106,7 @@
             <section id="smallProjects">
                 <a href="https://roblr.github.io/bouncingball/" class="projectLink" target="_blank">
                     <div class="container">
-                      <img src="images/bouncingballs.png" class="projectImage">
+                      <img src="graphics/images/bouncingballs.png" class="projectImage">
                       <div class="overlay">
                         <div class="projectDescription">
                             <h4>Bouncing Balls</h4>
@@ -121,7 +118,7 @@
 
                 <a href="https://roblr.github.io/treasurehunt/" class="projectLink" target="_blank">
                     <div class="container">
-                      <img src="images/treasurehunt.png" class="projectImage">
+                      <img src="graphics/images/treasurehunt.png" class="projectImage">
                       <div class="overlay">
                         <div class="projectDescription">
                             <h4>Treasure Hunt</h4>
@@ -133,7 +130,7 @@
 
                 <a href="https://roblr.github.io/CSS-Positioning-Exercise/" class="projectLink" target="_blank">
                     <div class="container">
-                      <img src="images/csspositioning.png" class="projectImage">
+                      <img src="graphics/images/csspositioning.png" class="projectImage">
                       <div class="overlay">
                         <div class="projectDescription">
                             <h4>CSS Positioning</h4>
@@ -142,20 +139,7 @@
                       </div>
                     </div>
                 </a>
-
-                <!-- <a href="https://roblr.github.io/treasurehunt/" class="projectLink" target="_blank">
-                    <div class="container">
-                      <img src="images/bouncingballs.png" class="projectImage">
-                      <div class="overlay">
-                        <div class="projectDescription">
-                            <h4>Treasure Hunt</h4>
-                            <p>A small game to practice getting click locations and starting a project from scratch with only a brief.</p>
-                        </div>
-                      </div>
-                    </div> -->
-                </a>
             </section>
-
         </section>
     </main>
 
@@ -164,8 +148,8 @@
             <h2>Contact</h2>
             <p>robert.leroux10@gmail.com</p>
             <div id="contact_icons">
-                <a href='https://www.linkedin.com/in/robert-le-roux-55a224173'><img class="contact_icons" src='images/linkedin-original.svg'></a>
-                <a href='https://github.com/RobLR'><img class="contact_icons" src='images/github-original.svg'></a>
+                <a href='https://www.linkedin.com/in/robert-le-roux-55a224173'><img class="contact_icons" src='graphics/icons/linkedin.svg'></a>
+                <a href='https://github.com/RobLR'><img class="contact_icons" src='graphics/icons/github.svg'></a>
             </div>      
         </div>
     </footer>

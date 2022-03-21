@@ -2,37 +2,37 @@
 let skills = [
     new Skill(
         "html",
-        "images/html5-plain.svg",
+        "graphics/icons/html5.svg",
         "html5 logo",
         1
     ),
     new Skill(
         "css",
-        "images/css3-plain.svg",
+        "graphics/icons/css3.svg",
         "css3 logo",
         2
     ),
     new Skill(
         "js",
-        "images/javascript-original.svg",
+        "graphics/icons/javascript.svg",
         "javascript logo",
         3
     ),
     new Skill(
         "ts",
-        "images/typescript-original.svg",
+        "graphics/icons/typescript.svg",
         "typescript logo",
         4
     ),
     new Skill(
         "git",
-        "images/git-original.svg",
+        "graphics/icons/git.svg",
         "git logo",
         5
     ),
     new Skill(
         "github",
-        "images/github-original.svg",
+        "graphics/icons/github.svg",
         "github logo",
         6
     )

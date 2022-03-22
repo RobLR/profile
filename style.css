@@ -161,14 +161,17 @@ hr{
 .bigProject {
     position: relative;
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    flex-wrap: nowrap;
-    border: 2px solid black;
-    margin: 1em;
     align-items: center;
-    padding: 2em;
-    gap: 2em;
+    padding: 1em;
+    transition: transform 0.75s, box-shadow 0.75s, filter 0.75s;
+    margin: 1em 0;
+    height: 20em;
+    filter: grayscale(0.5);
+    gap: 1em;
+}
+
+.bigProject:hover, .bigProject:focus{
+    filter: grayscale(0);
 }
 
 .reverse {
@@ -177,7 +180,7 @@ hr{
 
 .bigProjectLink {
     width: 100%;
-    min-width: 40%;
+    max-width: 40%;
 }
 
 .bigProjectImage {
@@ -185,24 +188,42 @@ hr{
 }
 
 .bigProjectDescription {
-
     color: rgb(1, 8, 3);
+    background-color: #72ba5f;
+    padding: 1em;
+    border-radius: 0.25em;
+    max-width: 60%;
 }
 
-.projectGithubRight {
+.bigProjectDescription > a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+.bigProjectDescription > a:hover{
+    color: #630845;
+}
+
+.linksRight {
+    display: flex;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 50px;
-    z-index: 50;
+    margin: 0.5em;
 }
 
-.projectGithubLeft {
+.linksLeft {
+    display: flex;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 50px;
-    z-index: 50;
+    margin: 0.5em;
+}
+
+.externalLink, .logo{
+    width: 25px;
+    height: 25px;
 }
 
 /* Small projects */

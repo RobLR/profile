@@ -1,3 +1,12 @@
+/* Colours */
+:root{
+    --clrText: #000000;
+    --clrBackground: #F6EDD9;
+    --clrPrimary: #72BA5F;
+    --clrDarkPrimary: #005600;
+    --clrAccent: #9999CC;
+}
+
 *{
     box-sizing: border-box;
     margin: 0em;
@@ -6,13 +15,18 @@
     scroll-behavior: smooth;
 }
 
+h2{
+    margin-bottom: 0.25em;
+}
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(1, 8, 3);
+    background-color: var(--clrBackground);
 }
 
 hr{
-    background-color: rgb(114, 186, 95);
+    background-color: var(--clrDarkPrimary);
     height: 3px;
     border-width: 0;
     margin-left: 40%;
@@ -21,7 +35,7 @@ hr{
 
 /* Landing screen elements */
 #landing{
-    background-color: rgb(99, 105, 101);
+    background-color: var(--clrPrimary);
     width: 100%;
     height: 100vh;
     padding-left: 30%;
@@ -39,7 +53,7 @@ hr{
 
 /* Navigation bar elements */
 #nav{
-    background-color: rgb(114, 186, 95);
+    background-color: var(--clrDarkPrimary);
     position: sticky;
     top: 0;
     display: flex;
@@ -54,13 +68,15 @@ hr{
 .navbutton{
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: var(--clrText);
     padding: 1em;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+    color: var(--clrBackground);
 }
 
 .navbutton:hover, .navbutton:focus{
-    background-color: rgb(142, 200, 126);
+    background-color: var(--clrPrimary);
+    color: var(--clrText);
 }
 
 /* The main body of the website */
@@ -168,6 +184,8 @@ hr{
     height: 20em;
     filter: grayscale(0.5);
     gap: 1em;
+    background-color: var(--clrPrimary);
+    border-radius: 0.25em;
 }
 
 .bigProject:hover, .bigProject:focus{
@@ -185,11 +203,11 @@ hr{
 
 .bigProjectImage {
     width: 100%;
+    border-radius: 0.25em;
 }
 
 .bigProjectDescription {
-    color: rgb(1, 8, 3);
-    background-color: #72ba5f;
+    color: var(--clrText);
     padding: 1em;
     border-radius: 0.25em;
     max-width: 60%;
@@ -197,12 +215,8 @@ hr{
 
 .bigProjectDescription > a{
     text-decoration: none;
-    color: black;
+    color: var(--clrText);
     transition: color 0.5s;
-}
-
-.bigProjectDescription > a:hover{
-    color: #630845;
 }
 
 .linksRight {
@@ -211,6 +225,7 @@ hr{
     bottom: 0;
     right: 0;
     margin: 0.5em;
+    gap: 0.25em;
 }
 
 .linksLeft {
@@ -219,6 +234,7 @@ hr{
     bottom: 0;
     left: 0;
     margin: 0.5em;
+    gap: 0.25em;
 }
 
 .externalLink, .logo{
@@ -229,10 +245,9 @@ hr{
 /* Small projects */
 #smallProjects{
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
-    justify-content: center;
     gap: 2em;
+    justify-content: space-between;
 }
 
 .projectLink{
@@ -255,7 +270,7 @@ hr{
 .overlay {
     position: absolute;
     bottom: 0;
-    background-color: rgba(99, 105, 101, 0.829);
+    background-color: rgba(105, 105, 105, 0.829);
     overflow: hidden;
     width: 100%;
     height: 0; 
@@ -273,21 +288,23 @@ hr{
 
 /* Contact info and footer */
 #contact{
-    background-color: rgb(99, 105, 101);
+    background-color: var(--clrDarkPrimary);
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
 }
 
-#contact_heading{
-    text-align: center;
-}
-
-.contact_details{
+#contactIconsContainer{
     display: flex;
+    justify-content: center;
+    gap: 0.5em;
 }
 
-.contact_icons{
-    width:15px;
-    height:15px;
+.contact_icon{
+    width:25px;
+    height:25px;
+}
+
+.email:hover{
+    cursor: pointer;
 }

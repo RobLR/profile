@@ -171,12 +171,22 @@
             <h2>Contact</h2>
             <!-- <p>robert.leroux10@gmail.com</p> -->
             <div id="contactIconsContainer">
-                <img src="graphics/icons/email.svg" alt="email" class="contact_icon email">
+                <img src="graphics/icons/email.svg" alt="email" class="contact_icon email" id="email">
                 <a href='https://www.linkedin.com/in/robert-le-roux-55a224173'><img class="contact_icon" src='graphics/icons/linkedin.svg'></a>
                 <a href='https://github.com/RobLR'><img class="contact_icon" src='graphics/icons/github.svg'></a>
             </div>      
         </div>
     </footer>
 
+    <dialog id="contactForm" >
+        <h3>Contact Me!</h3>
+        <form method="dialog" >
+            <label>Name: <input type="text" name="name" id="nameField"></label>
+            <label>Email: <input type="email" name="email" id="emailForm"></label>
+            <label id="messageField">Your message: <textarea name="message"></textarea></label>
+            <button type="submit">Send</button>
+        </form>
+        <img src="graphics/icons/close.svg" alt="close form" id="closeContact">
+    </dialog>
 </body>
 </html>

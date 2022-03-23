@@ -16,3 +16,10 @@ rightArrow.addEventListener("click", right);
 // Listens for previous skill
 let leftArrow = document.getElementById("leftArrow");
 leftArrow.addEventListener("click", left);
+// Listens for opening contact form
+let emailButton = document.getElementById("email");
+emailButton.addEventListener("click", openContactForm);
+// Listens for closing contact form
+let closeContactBtn = document.getElementById("closeContact");
+closeContactBtn.addEventListener("click", closeContactForm);
+const contactForm = document.getElementById("contactForm");

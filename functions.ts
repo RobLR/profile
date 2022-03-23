@@ -89,3 +89,13 @@ function left(){
     }
     updateSkills()
 }
+
+// Open contact form
+function openContactForm(){
+    contactForm.showModal()
+}
+
+// Close contact form
+function closeContactForm(){
+    contactForm.close()
+}

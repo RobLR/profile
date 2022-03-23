@@ -48,3 +48,13 @@ rightArrow.addEventListener("click", right)
 // Listens for previous skill
 let leftArrow = <HTMLImageElement> document.getElementById("leftArrow")
 leftArrow.addEventListener("click", left)
+
+// Listens for opening contact form
+let emailButton = <HTMLImageElement> document.getElementById("email")
+emailButton.addEventListener("click", openContactForm)
+
+// Listens for closing contact form
+let closeContactBtn = <HTMLImageElement> document.getElementById("closeContact")
+closeContactBtn.addEventListener("click", closeContactForm)
+
+const contactForm = <HTMLDialogElement>document.getElementById("contactForm")

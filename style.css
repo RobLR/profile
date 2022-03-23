@@ -82,8 +82,10 @@ hr{
 /* The main body of the website */
 #main{
     margin-top: 1em;
-    padding-left: 20%;
-    padding-right: 20%;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+    max-width: 60%;
+    margin: auto;
 }
 
 /* About section */
@@ -327,6 +329,8 @@ hr{
 textarea{
     display: block;
     resize: none;
+    width: 100%;
+    height: 15em;
 }
 
 #closeContact{
@@ -335,4 +339,8 @@ textarea{
     right: 0;
     width: 30px;
     z-index: 300;
+}
+
+#closeContact:hover{
+    cursor: pointer;
 }

@@ -12,8 +12,8 @@
     // ↓ Add "vue" language.
     "vue",
     // ↓ Add "svelte" language.
-    "svelte",
+    "svelte"
     // ↓ Add "astro" language.
-    "astro"
+    // "astro"
   ]
 }

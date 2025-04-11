@@ -1,9 +1,98 @@
 ---
-
+import darkModeImage from "../assets/icons/dark_mode.svg";
 ---
 
-<nav>
-  <div><a href="/">Home</a></div>
-  <div><a href="/blog">Blog</a></div>
-  <div><a href="/portfolio">Portfolio</a></div>
-</nav>
+<header>
+  <nav>
+    <div><a href="/">Home</a></div>
+    <div><a href="/blog">Blog</a></div>
+    <div><a href="/portfolio">Portfolio</a></div>
+  </nav>
+  <fieldset>
+    <legend>Theme</legend>
+
+    <div>
+      <input type="radio" id="light" name="theme" value="light" />
+
+      <input type="radio" id="system" name="theme" value="system" checked />
+
+      <input type="radio" id="dark" name="theme" value="dark" />
+
+      <div id="slider" data-placement="left"></div>
+    </div>
+  </fieldset>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  fieldset {
+    margin: 0;
+
+    & div {
+      /* border: 1px solid black; */
+      border-radius: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      background-color: lightgrey;
+      /* z-index: -2; */
+    }
+
+    & input[type="radio"] {
+      margin: 0;
+      appearance: none;
+      font: inherit;
+      color: currentColor;
+      width: 2rem;
+      aspect-ratio: 1/1;
+      background-size: 75%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 100%;
+      /* z-index: 1; */
+    }
+
+    & #slider {
+      width: 2rem;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      border: 0;
+      position: absolute;
+      background-color: gray;
+      /* z-index: -1; */
+      transition: all 0.5s ease;
+    }
+
+    & div:has(#light:checked) > div {
+      left: 0;
+    }
+
+    & div:has(#system:checked) > div {
+      left: calc(50% - 1rem);
+    }
+
+    & div:has(#dark:checked) > div {
+      left: calc(100% - 2rem);
+    }
+
+    & #light {
+      background-image: url("/src/assets/icons/light_mode.svg");
+    }
+    & #dark {
+      background-image: url("/src/assets/icons/dark_mode.svg");
+    }
+    & input[type="radio"]:checked {
+      /* border: 0.15em solid red; */
+      /* background-color: grey; */
+    }
+  }
+</style>

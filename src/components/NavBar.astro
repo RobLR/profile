@@ -1,5 +1,5 @@
 ---
-import darkModeImage from "../assets/icons/dark_mode.svg";
+
 ---
 
 <header>
@@ -8,19 +8,20 @@ import darkModeImage from "../assets/icons/dark_mode.svg";
     <div><a href="/blog">Blog</a></div>
     <div><a href="/portfolio">Portfolio</a></div>
   </nav>
-  <fieldset>
+  <p>Test</p>
+  <form id="theme-selector">
     <legend>Theme</legend>
 
     <div>
       <input type="radio" id="light" name="theme" value="light" />
 
-      <input type="radio" id="system" name="theme" value="system" checked />
+      <input type="radio" id="system" name="theme" value="system" />
 
       <input type="radio" id="dark" name="theme" value="dark" />
 
       <div id="slider" data-placement="left"></div>
     </div>
-  </fieldset>
+  </form>
 </header>
 
 <style>
@@ -32,7 +33,7 @@ import darkModeImage from "../assets/icons/dark_mode.svg";
     display: flex;
     gap: 1rem;
   }
-  fieldset {
+  form {
     margin: 0;
 
     & div {
@@ -44,7 +45,6 @@ import darkModeImage from "../assets/icons/dark_mode.svg";
       gap: 0.5rem;
       position: relative;
       background-color: lightgrey;
-      /* z-index: -2; */
     }
 
     & input[type="radio"] {
@@ -58,7 +58,7 @@ import darkModeImage from "../assets/icons/dark_mode.svg";
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 100%;
-      /* z-index: 1; */
+      z-index: 1;
     }
 
     & #slider {
@@ -68,7 +68,7 @@ import darkModeImage from "../assets/icons/dark_mode.svg";
       border: 0;
       position: absolute;
       background-color: gray;
-      /* z-index: -1; */
+      z-index: 0;
       transition: all 0.5s ease;
     }
 
@@ -96,3 +96,15 @@ import darkModeImage from "../assets/icons/dark_mode.svg";
     }
   }
 </style>
+
+<script>
+  const form = document.getElementById("theme-selector");
+
+  form?.addEventListener("click", switchTheme);
+
+  function switchTheme(e: any) {
+    const selectedTheme: string = e.target.value;
+
+    localStorage.setItem("theme", selectedTheme);
+  }
+</script>

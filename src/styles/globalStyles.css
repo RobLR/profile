@@ -12,19 +12,6 @@
   --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
 }
 
-/* THEMES */
-:root {
-  --color-1: grey;
-  --color-accent: red;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-1: grey;
-    --color-accent: green;
-  }
-}
-
 /* SPACING */
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
@@ -51,4 +38,40 @@
 
   /* Custom pairs */
   --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+}
+
+/* THEMES */
+:root {
+  color-scheme: var(--color-scheme, light dark);
+
+  --clr-background: lightgray;
+  --clr-text: darkgreen;
+
+  &:has(#dark:checked) {
+    --color-scheme: dark;
+
+    --clr-background: gray;
+    --clr-text: lightblue;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:has(#system:checked) {
+      --color-scheme: dark;
+
+      --clr-background: gray;
+      --clr-text: lightblue;
+    }
+  }
+}
+
+p,
+a,
+h1,
+legend,
+a {
+  color: var(--clr-text);
+}
+
+body {
+  background-color: var(--clr-background);
 }

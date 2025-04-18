@@ -42,24 +42,35 @@
 
 /* THEMES */
 :root {
+  /* Light */
+  --clr-background-light: lightgray;
+  --clr-text-light: darkgreen;
+
+  /* Dark */
+  --clr-background-dark: gray;
+  --clr-text-dark: lightblue;
+}
+
+/* THEME SWITCHER*/
+:root {
   color-scheme: var(--color-scheme, light dark);
 
-  --clr-background: lightgray;
-  --clr-text: darkgreen;
+  --clr-background: var(--clr-background-light);
+  --clr-text: var(--clr-text-light);
 
   &:has(#dark:checked) {
     --color-scheme: dark;
 
-    --clr-background: gray;
-    --clr-text: lightblue;
+    --clr-background: var(--clr-background-dark);
+    --clr-text: var(--clr-text-dark);
   }
 
   @media (prefers-color-scheme: dark) {
     &:has(#system:checked) {
       --color-scheme: dark;
 
-      --clr-background: gray;
-      --clr-text: lightblue;
+      --clr-background: var(--clr-background-dark);
+      --clr-text: var(--clr-text-dark);
     }
   }
 }

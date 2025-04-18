@@ -10,5 +10,21 @@ const { title = "My Astro Website", ...props } = Astro.props;
   <meta name="robots" content="noindex" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <title>{title}</title>
-  <meta name="description" content="Welcome to my new Astro site!" /></head
->
+  <meta name="description" content="Welcome to my new Astro site!" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    const themeFromStorage = localStorage.getItem("theme") || "";
+
+    function setChecked(id: string) {
+      if (!id) return;
+      const element: HTMLInputElement = document.getElementById(
+        id,
+      ) as HTMLInputElement;
+
+      element.checked = true;
+      return;
+    }
+
+    setChecked(themeFromStorage);
+  </script>
+</head>

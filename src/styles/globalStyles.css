@@ -45,10 +45,12 @@
   /* Light */
   --clr-background-light: lightgray;
   --clr-text-light: darkgreen;
+  --clr-accent-light: pink;
 
   /* Dark */
   --clr-background-dark: gray;
   --clr-text-dark: lightblue;
+  --clr-accent-dark: lime;
 }
 
 /* THEME SWITCHER*/
@@ -57,12 +59,14 @@
 
   --clr-background: var(--clr-background-light);
   --clr-text: var(--clr-text-light);
+  --clr-accent: var(--clr-accent-light);
 
   &:has(#dark:checked) {
     --color-scheme: dark;
 
     --clr-background: var(--clr-background-dark);
     --clr-text: var(--clr-text-dark);
+    --clr-accent: var(--clr-accent-dark);
   }
 
   @media (prefers-color-scheme: dark) {
@@ -71,6 +75,7 @@
 
       --clr-background: var(--clr-background-dark);
       --clr-text: var(--clr-text-dark);
+      --clr-accent: var(--clr-accent-dark);
     }
   }
 }
@@ -85,4 +90,14 @@ a {
 
 body {
   background-color: var(--clr-background);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

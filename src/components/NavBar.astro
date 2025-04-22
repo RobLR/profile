@@ -3,21 +3,49 @@
 ---
 
 <header>
+  <a href="#main_content" class="visually-hidden"> Jump to main content </a>
+  <a href="/">RobLR.io</a>
   <nav>
-    <div><a href="/">Home</a></div>
-    <div><a href="/blog">Blog</a></div>
-    <div><a href="/portfolio">Portfolio</a></div>
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/portfolio">Portfolio</a>
   </nav>
-  <p>Test</p>
+
   <form id="theme-selector">
-    <legend>Theme</legend>
+    <legend class="visually-hidden">Theme Switcher</legend>
 
     <div>
-      <input type="radio" id="light" name="theme" value="light" />
-
-      <input type="radio" id="system" name="theme" value="system" />
-
-      <input type="radio" id="dark" name="theme" value="dark" />
+      <label for="light" class="visually-hidden">Select Light Theme</label>
+      <label for="system" class="visually-hidden"
+        >Select System Default Theme</label
+      >
+      <label for="dark" class="visually-hidden">Select Dark Theme</label>
+    </div>
+    <div id="theme-switcher">
+      <input
+        aria-label="Select light theme"
+        title="light"
+        type="radio"
+        id="light"
+        name="theme"
+        value="light"
+      />
+      <input
+        aria-label="Select system theme"
+        title="system"
+        type="radio"
+        id="system"
+        name="theme"
+        value="system"
+      />
+      <input
+        aria-label="Select dark theme"
+        title="dark"
+        type="radio"
+        id="dark"
+        name="theme"
+        value="dark"
+      />
 
       <div id="slider" data-placement="left"></div>
     </div>
@@ -28,15 +56,20 @@
   header {
     display: flex;
     justify-content: space-between;
+    background-color: var(--clr-accent);
+    align-items: center;
   }
   nav {
     display: flex;
-    gap: 1rem;
   }
+
+  nav > a {
+  }
+
   form {
     margin: 0;
 
-    & div {
+    & #theme-switcher {
       /* border: 1px solid black; */
       border-radius: 2rem;
       display: flex;
@@ -44,7 +77,6 @@
       align-items: center;
       gap: 0.5rem;
       position: relative;
-      background-color: lightgrey;
     }
 
     & input[type="radio"] {
@@ -67,7 +99,6 @@
       border-radius: 100%;
       border: 0;
       position: absolute;
-      background-color: gray;
       z-index: 0;
       transition: all 0.5s ease;
     }

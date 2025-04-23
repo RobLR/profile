@@ -59,12 +59,13 @@
     background-color: var(--clr-primary);
     align-items: center;
   }
+
   nav {
     display: flex;
   }
 
-  nav > a {
-  }
+  /* nav > a {
+  } */
 
   form {
     margin: 0;
@@ -83,7 +84,7 @@
       margin: 0;
       appearance: none;
       font: inherit;
-      color: currentColor;
+      color: currentcolor;
       width: 2rem;
       aspect-ratio: 1/1;
       background-size: 75%;
@@ -118,11 +119,14 @@
     & #light {
       background-image: url("/src/assets/icons/light_mode.svg");
     }
+
     & #dark {
       background-image: url("/src/assets/icons/dark_mode.svg");
     }
+
     & input[type="radio"]:checked {
       /* border: 0.15em solid red; */
+
       /* background-color: grey; */
     }
   }

@@ -1,22 +1,26 @@
 ---
-const { projectName, projectTags, projectDescription, img } = Astro.props;
+import Tag from "./Tag.astro";
+
+const {
+  projectData: { name, description, tags, projectLink, sourceLink },
+} = Astro.props;
 ---
 
 <div>
-  <img src="" alt="" />
   <div>
-    <h3>{projectName}</h3>
-    <p>{projectDescription}</p>
+    <h3>{name}</h3>
+    <p>{description}</p>
+    <a href={projectLink} target="_blank">View Project</a>
+    <a href={sourceLink} target="_blank">View Source</a>
     <div>
-      <div>
-        <p></p>
-      </div>
-      <div>
-        <p></p>
-      </div>
-      <div>
-        <p></p>
-      </div>
+      {tags.map((tag: string) => <Tag tagText={tag} />)}
     </div>
   </div>
 </div>
+
+<style>
+  div > div > div {
+    display: flex;
+    gap: var(--space-3xs);
+  }
+</style>

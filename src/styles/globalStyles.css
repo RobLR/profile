@@ -41,31 +41,41 @@
 }
 
 /* THEMES */
+/* https://www.realtimecolors.com/?colors=051008-f9fdfa-3dc370-9bcce0-698cd0&fonts=Inter-Inter */
+
 :root {
   /* Light */
-  --clr-background-light: lightgray;
-  --clr-text-light: darkgreen;
-  --clr-accent-light: pink;
+  --clr-text-light: rgb(5, 16, 8);
+  --clr-background-light: rgb(249, 253, 250);
+  --clr-primary-light: rgb(61, 195, 112);
+  --clr-secondary-light: rgb(155, 204, 224);
+  --clr-accent-light: rgb(105, 140, 208);
 
   /* Dark */
-  --clr-background-dark: gray;
-  --clr-text-dark: lightblue;
-  --clr-accent-dark: lime;
+  --clr-text-dark: rgb(239, 250, 242);
+  --clr-background-dark: rgb(3, 8, 4);
+  --clr-primary-dark: rgb(60, 195, 112);
+  --clr-secondary-dark: rgb(31, 82, 101);
+  --clr-accent-dark: rgb(48, 82, 151);
 }
 
 /* THEME SWITCHER*/
 :root {
   color-scheme: var(--color-scheme, light dark);
 
-  --clr-background: var(--clr-background-light);
   --clr-text: var(--clr-text-light);
+  --clr-background: var(--clr-background-light);
+  --clr-primary: var(--clr-primary-light);
+  --clr-secondary: var(--clr-secondary-light);
   --clr-accent: var(--clr-accent-light);
 
   &:has(#dark:checked) {
     --color-scheme: dark;
 
-    --clr-background: var(--clr-background-dark);
     --clr-text: var(--clr-text-dark);
+    --clr-background: var(--clr-background-dark);
+    --clr-primary: var(--clr-primary-dark);
+    --clr-secondary: var(--clr-secondary-dark);
     --clr-accent: var(--clr-accent-dark);
   }
 
@@ -73,11 +83,18 @@
     &:has(#system:checked) {
       --color-scheme: dark;
 
-      --clr-background: var(--clr-background-dark);
       --clr-text: var(--clr-text-dark);
+      --clr-background: var(--clr-background-dark);
+      --clr-primary: var(--clr-primary-dark);
+      --clr-secondary: var(--clr-secondary-dark);
       --clr-accent: var(--clr-accent-dark);
     }
   }
+}
+
+/* OTHER VARIABLES */
+:root {
+  --border-rad: 15px;
 }
 
 p,
@@ -101,3 +118,9 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+
+/* https://www.realtimecolors.com/?colors=06190e-f0fcf5-42d480-96d1e7-6293db&fonts=Inter-Inter */
+/* https://www.realtimecolors.com/?colors=060f07-f5fbf6-59ba67-9ed7d6-7ab0c8&fonts=Inter-Inter */
+/* https://www.realtimecolors.com/?colors=051008-f9fdfa-3dc370-9bcce0-698cd0&fonts=Inter-Inter */
+/* https://www.realtimecolors.com/?colors=042011-f8fefb-35e380-86eeee-5fcae9&fonts=Inter-Inter */
+/* https://www.realtimecolors.com/?colors=030c05-fbfefc-40d46f-92e7e6-69b5dd&fonts=Inter-Inter */

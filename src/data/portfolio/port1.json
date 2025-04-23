@@ -1,3 +1,7 @@
 {
-  "name": "test1"
+  "name": "Project 1",
+  "description": "This is a description",
+  "projectLink": "https://github.com/RobLR",
+  "sourceLink": "https://github.com/RobLR",
+  "tags": ["HTML", "CSS"]
 }

@@ -9,6 +9,10 @@ const portfolio = defineCollection({
   loader: glob({ pattern: "*.json", base: "./src/data/portfolio" }),
   schema: z.object({
     name: z.string(),
+    description: z.string(),
+    projectLink: z.string(),
+    sourceLink: z.string(),
+    tags: z.array(z.string()),
   }),
 });
 

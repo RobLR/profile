@@ -1,0 +1,18 @@
+---
+const { tagText } = Astro.props;
+---
+
+<p>{tagText}</p>
+
+<style>
+  p {
+    border-radius: var(--border-rad);
+    background-color: var(--clr-accent);
+    padding-block: var(--space-3xs);
+    padding-inline: var(--space-2xs);
+    text-box: trim-both cap alphabetic;
+  }
+
+  @supports (text-box-trim: trim-both) and (text-box-edge: cap alphabetic) {
+  }
+</style>

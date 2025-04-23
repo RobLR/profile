@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import PortfolioCard from "./PortfolioCard.astro";
 const projects = await getCollection("portfolio");
+
+console.log(projects);
 ---
 
 <div>
@@ -9,7 +11,7 @@ const projects = await getCollection("portfolio");
     <h1>Portfolio</h1>
     {
       projects.map((project: any) => (
-        <PortfolioCard projectName={project.data.name} />
+        <PortfolioCard projectData={project.data} />
       ))
     }
   </section>

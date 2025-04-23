@@ -6,14 +6,6 @@
     "typescript", // Enable .ts
     "typescriptreact" // Enable .tsx
   ],
-  "stylelint.validate": [
-    // ↓ Add "html" language.
-    "html",
-    // ↓ Add "vue" language.
-    "vue",
-    // ↓ Add "svelte" language.
-    "svelte"
-    // ↓ Add "astro" language.
-    // "astro"
-  ]
+  "stylelint.validate": ["css", "html", "vue", "svelte", "astro"],
+  "gitlens.codeLens.scopes": ["document"]
 }
